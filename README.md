@@ -21,4 +21,6 @@ Tools:
 - ## Machine Learning
   - [Tensorflow - ECG analysis and modelling](https://github.com/zfenton/UCBMIDS_W207_finalProject)
   - [Pytorch Intro](https://github.com/zfenton/Portfolio/blob/Main/pytorch_explore.ipynb)
-  - [Pytroch - First Linear Model](https://github.com/zfenton/Portfolio/blob/Main/pytorch_FirstLinearModel.ipynb) 
+  - [Pytroch - First Linear Model](https://github.com/zfenton/Portfolio/blob/Main/pytorch_FirstLinearModel.ipynb)
+- ## Personal Projects
+  - [Anniversary App - Full Stack web app](https://github.com/zfenton/Portfolio/tree/Main/anniApp)
