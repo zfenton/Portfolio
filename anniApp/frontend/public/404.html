@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect trick.
+      // When GitHub Pages returns a 404 for a client-side route, this page
+      // saves the full URL to sessionStorage and redirects to the root,
+      // where the main app picks it up and replaces the history entry.
+      var url = window.location.href;
+      sessionStorage.setItem('spa-redirect', url);
+      window.location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
