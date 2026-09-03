@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Global app styling */
+body, .stApp {
+    background-color: #E6E3DC;
+    color: #080603;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Header styling */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 40px;
+    background-color: #9C897E;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: -3rem !important;
+    padding-top: 2.5rem !important;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 999;
+    height: 90px;
+}
+
+/* Logo positioning */
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    transform: translateY(-10px);
+}
+
+.header-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    display: flex;
+    align-self: center;
+}
+
+.header-right {
+    margin-left: auto; 
+}
+
+/* Header text and navigation */
+.app-header h2 {
+    color: #E6E3DC !important;
+    margin: 0;
+    font-size: 36px !important;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif !important;
+    line-height: 1;
+    align-self: center;
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    color: #E6E3DC;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, span, div {
+    color: #080603;
+    font-family: 'Libre Baskerville', serif !important;
+    font-weight: 700 !important;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif !important;
+    font-weight: 400 !important;
+}
+
+/* Form elements */
+div.stTextInput label, div.stMultiSelect label, div.stTextArea label {
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #080603 !important;
+}
+
+.stMarkdown div {
+    font-size: 18px !important;
+    color: #080603 !important;
+}
+
+h1, .stMarkdown h1 {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+}
+
+div[data-baseweb="select"] {
+    background-color: #F5F2EB;
+    border-color: #9C897E !important;
+}
+
+div[data-baseweb="tag"] {
+    background-color: #4e7694 !important; 
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+div[data-baseweb="tag"]:hover {
+    background-color: #8A7A6E !important; 
+}
+
+div[data-baseweb="tag"] span {
+    color: #E6E3DC !important;
+}
+
+div[data-baseweb="tag"] button {
+    color: #E6E3DC !important;
+}
+
+div[role="listbox"] {
+    background-color: #F5F2EB !important;
+    border-color: #9C897E !important;
+}
+
+div[role="option"] {
+    background-color: #F5F2EB !important;
+    color: #080603 !important;
+}
+
+div[role="option"]:hover {
+    background-color: #8A7A6E !important; 
+    color: #E6E3DC !important;
+}
+
+div[aria-selected="true"] {
+    background-color: #4e7694 !important; 
+    color: #E6E3DC !important;
+}
+
+.stMultiSelect div[role="option"] {
+    font-size: 18px !important;
+}
+
+/* Input fields */
+div[data-baseweb="input"], div[data-baseweb="select"], div[data-baseweb="tag"] {
+    font-size: 16px !important;
+}
+
+.stTextInput input, .stTextArea textarea {
+    font-size: 18px !important;
+    background-color: #F5F2EB !important;
+    border-color: #9C897E !important;
+    color: #080603 !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #F5F2EB !important;
+    padding: 1rem;
+}
+
+.sidebar-nav .stButton > button {
+    background-color: #9C897E !important;
+    color: white !important;
+    font-weight: 500 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 10px 15px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+}
+
+.sidebar-nav .stButton button[data-testid="baseButton-primary"] {
+    background-color: #4e7694 !important; 
+    color: white !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* General button styling */
+.stButton > button:not([id*="landing"]) {
+    width: 100% !important;
+    margin: 4px 0 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #9C897E !important; 
+    color: #FFFFFF !important;
+    border-radius: 5px !important;
+    border: none !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Landing page button */
+.stButton > button[id*="landing"] {
+    background-color: #4e7694 !important; 
+    color: white !important;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    padding: 16px 32px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+}
+
+.stButton > button,
+button[data-testid="baseButton-primary"],
+button[data-testid="baseButton-secondary"],
+[data-testid="stFormSubmitButton"] > button {
+    font-size: 18px !important;
+}
+
+
+/* Button hover effect */
+.stButton > button:hover {
+    background-color: #8A7A6E !important; 
+}
+
+/* Tab styling */
+.tab-button {
+    font-size: 28px !important; 
+    font-weight: 700 !important;
+    padding: 12px 15px !important;
+    background-color: #9C897E !important;
+    color: #E6E3DC !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    margin: 0 5px !important;
+}
+
+.tab-button[type="primary"] {
+    background-color: #4e7694 !important; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+}
+
+button[data-baseweb="tab"] {
+    background-color: #E6E3DC !important;
+    color: #080603 !important;
+    font-size: 18px !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #4e7694 !important;
+    color: #E6E3DC !important;
+}
+
+/* Form buttons */
+[data-testid="stFormSubmitButton"] > button {
+    background-color: #9C897E !important;
+    color: #E6E3DC !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+[data-testid="stFormSubmitButton"] > button:hover {
+    background-color: #8A7A6E !important; 
+}
+
+/* Book card styling */
+.recommendation-card {
+    background-color: #F5F2EB;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #080603 !important;
+    height: 520px;
+    overflow-y: scroll;
+    scrollbar-color: #4e7694 #E6E3DC; 
+    scrollbar-width: auto;
+}
+
+.recommendation-card::-webkit-scrollbar {
+    width: 12px;
+}
+
+.recommendation-card::-webkit-scrollbar-track {
+    background: #E6E3DC;
+}
+
+.recommendation-card::-webkit-scrollbar-thumb {
+    background-color: #9C897E; 
+    border-radius: 6px;
+    border: 2px solid #E6E3DC;
+}
+
+.card-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+div[style*="background-color:#F5F2EB"] {
+    margin-bottom: 10px !important;
+    border: 1px solid #080603 !important;
+    background-color: #F5F2EB !important;
+}
+
+div[style*="background-color:#2C2C2C"], 
+div[style*="background-color:#F5F2EB"] {
+    background-color: #F5F2EB !important;
+    border: 1px solid #080603 !important; 
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+div[style*="background-color:#2C2C2C"] h4,
+div[style*="background-color:#F5F2EB"] h4 {
+    color: #080603 !important;
+}
+
+div[style*="background-color:#2C2C2C"] p,
+div[style*="background-color:#F5F2EB"] p {
+    color: #080603 !important;
+}
+
+/* Button groups */
+.book-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Star rating component */
+.react-stars {
+    color: #9C897E !important;
+    margin-top: -15px;
+    background-color: #E6E3DC !important; 
+    padding: 10px !important;
+    border-radius: 5px !important;
+}
+
+div.st-stars {
+    background-color: #E6E3DC !important;
+}
+
+/* Expander styling */
+div.streamlit-expanderHeader {
+    background-color: #9C897E !important;
+    color: #E6E3DC !important;
+}
+
+/* Info boxes */
+div.stAlert {
+    background-color: #F5F2EB !important;
+    color: #080603 !important;
+    border: 1px solid #9C897E !important;
+}
+
+/* Override main app background */
+.main .block-container {
+    background-color: #E6E3DC;
+    padding-top: 30px !important;
+}
+
+/* Sidebar logo sizing */
+[data-testid="stSidebar"] img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+[data-testid="stSidebar"] h2 {
+    font-size: 28px !important;
+}
+
+div[data-baseweb="tag"],
+div[role="option"][aria-selected="true"],
+div.stMultiSelect span[role="button"],
+.stMultiSelect [data-baseweb="tag"],
+[data-testid="stMultiSelect"] [data-baseweb="tag"] {
+    background-color: #4e7694 !important;
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+div[data-baseweb="tag"] span,
+div[data-baseweb="tag"] div,
+div[data-baseweb="tag"] p,
+[data-testid="stMultiSelect"] [data-baseweb="tag"] * {
+    color: #FFFFFF !important;
+}
+
+div[data-baseweb="tag"] button {
+    color: #FFFFFF !important;
+}
+
+/* 1) Let the expander background be the same as the page (e.g., #E6E3DC) */
+summary[data-testid="stExpander"] {
+    background-color: #E6E3DC !important;  /* or transparent, if you prefer */
+    border: none !important;
+    padding: 0.5rem 1rem !important;       /* adjust as needed */
+    margin-bottom: 0 !important;
+}
+
+/* 2) Increase just the header text inside <summary>. 
+   Sometimes Streamlit wraps it in <p> or <div data-testid="stMarkdownContainer"> 
+   so targeting summary[data-testid="stExpander"] p is typical. */
+summary[data-testid="stExpander"] p {
+    font-size: 1.3em !important;  /* or 20px, 24px, etc. */
+    font-weight: 600 !important;
+    color: #080603 !important;    /* same text color as your main body? */
+    margin: 0 !important;
+}
+
+/* 3) Scale up the chevron/arrow icon 
+   (the '>' arrow to open/close the expander) */
+[data-testid="stExpanderToggleIcon"] {
+    transform: scale(1.5) !important;
+    /* optional: add margin to push it away from text 
+       margin-left: 0.5rem !important; */
+}

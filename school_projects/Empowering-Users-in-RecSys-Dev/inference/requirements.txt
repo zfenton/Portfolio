@@ -1,0 +1,9 @@
+datetime
+tensorflow-recommenders
+plotnine
+Flask
+tensorflow
+numpy
+pandas
+scikit-learn
+boto3
